@@ -2,7 +2,7 @@ import userRepository from "../repositories/user.repository.js";
 
 class UserService {
     async createUser(data) {
-        const user = await userRepository.create(data);
+        const user = await userRepository.createUser(data);
         return user;
     }
     async getAllUsers() {

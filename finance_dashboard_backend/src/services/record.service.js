@@ -1,7 +1,7 @@
 import recordRepository from "../repositories/record.repository.js";
 class RecordService {
     async createRecord(data) {
-        const record = await recordRepository.create(data);
+        const record = await recordRepository.createRecord(data);
         return record;
     }
     async getRecords(filters) {

@@ -11,7 +11,7 @@ class AuthService {
         }
 
         const hashedPassword = await bcrypt.hash(data.password, 10);
-        const user = await userRepository.create({
+        const user = await userRepository.createUser({
             ...data,
             password: hashedPassword
         });
