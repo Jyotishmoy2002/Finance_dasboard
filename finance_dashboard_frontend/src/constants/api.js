@@ -1,4 +1,5 @@
-export const API_BASE_URL = "http://localhost:5000/api";
+export const API_BASE_URL =
+  "https://finance-dasboard-x18v.onrender.com";
 
 export const API_ENDPOINTS = {
   LOGIN: "/auth/login",
